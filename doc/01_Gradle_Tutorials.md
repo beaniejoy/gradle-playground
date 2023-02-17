@@ -30,20 +30,21 @@ java {
 ```shell
 $ ./gradlew compileJava
 ```
-uses java installation to compile `.java` into `.class` files
+uses java installation to compile `.java` into `.class` files  
+`/build/classes/..`
 
 - managing resources(`processResources`)
 ```shell
 $ ./gradlew processResources
 ```
 copies contents of `resources` directories into `build` directory  
-(`app/build/resources/main/`)  
+(`/build/resources/main/`)  
 
 - package into jar file
 ```shell
 $ ./gradlew jar
 ```
-`app/src/main/java` & `app/src/resources` > `app/build/libs/app-0.0.1.jar`
+`/src/main/java` & `/src/resources` > `/build/libs/app-0.0.1.jar`
 
 - easily run tests
 ```shell
